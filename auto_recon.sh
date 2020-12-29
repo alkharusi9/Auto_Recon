@@ -18,7 +18,8 @@ if [ -z "${1}"];then
 else
 	echo "[!] Starting Auto-Recon"
 fi
-if which nmap >/dev/null; then
+if which nmap >/dev/null 
+then
 	echo "[!] Running Fast nmap scan"
 else
 	echo "[!] nmap is not installed"
@@ -48,12 +49,12 @@ echo '[!] Scanning the target using nikto...'
 nikto -h $1
 sleep 3
 echo "[!] Looking for subdomains using sublist3r"
-if which sublist3r 2>/dev/null;then
+if which sublist3r 2>/dev/null
+then
 	python3 /opt/Sublist3r/sublist3r.py -d $1
 else
 	echo "[!] It seems sublist3r is not installed, installing now"
 	sudo apt install sublist3r 
 	echo "[!] Done"
+fi
 echo '+++++| Finished |+++++'
-
-
