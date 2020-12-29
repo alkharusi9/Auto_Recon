@@ -26,7 +26,6 @@ else
 	echo "[!] Start Installing"
 	sudo apt install nmap
 fi
-echo "[!] Running fast scan"
 nmap -F $1
 echo '[!] Detailed scan using nmap...'
 nmap -sC -sV -oA $1
