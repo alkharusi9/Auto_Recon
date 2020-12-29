@@ -1,4 +1,5 @@
 #!/bin/bash
+# Written by Alsalt Alkharosi.
 
 if which figlet >/dev/null;then
 	figlet -k -f slant Auto-Recon
