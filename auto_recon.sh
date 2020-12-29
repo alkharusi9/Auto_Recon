@@ -7,6 +7,7 @@ else
 	echo "figlet was not installed, installing now"
 	sudo apt install figlet
 	echo "figlet was installed, restart the tool!"
+	exit 1
 fi
 echo "[*] This is an Auto-Recon script"
 echo "[*] Today's date is"
