@@ -1,5 +1,5 @@
 #!/bin/bash
-# Written by Alsalt Alkharoosi
+
 
 if which figlet >/dev/null;then
 	figlet -k -f slant Auto-Recon
@@ -9,6 +9,7 @@ else
 	echo "figlet was installed, restart the tool!"
 	exit 1
 fi
+echo "	     # Coded by: Alsalt Alkharosi"
 echo "[*] This is an Auto-Recon script"
 echo "[*] Today's date is"
 date
